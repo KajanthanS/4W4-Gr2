@@ -46,14 +46,28 @@ h1 {
     display: flex;
     background-color: lightblue;
     
+    
   }
 
   footer{
     background-color: lightcoral;
   }
 
+  .menu{
+    display: flex;
+    justify-content: space-around;
+  }
 
+.menu-item{
+    
+    list-style-type: none;
+    padding: 1em 5.8em;
+    background-color: lightpink;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border-radius: 100px;
 
+  }
   
-
+ 
   
