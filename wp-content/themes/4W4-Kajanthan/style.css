@@ -369,6 +369,15 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.menu-entete-container {
+  display: flex;
+  background-color: lightblue;
+}
+
+footer {
+  background-color: lightcoral;
+}
+
 a {
   color: rgb(237, 158, 62);
 }
