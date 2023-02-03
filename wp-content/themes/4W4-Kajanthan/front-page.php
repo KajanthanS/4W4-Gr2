@@ -9,10 +9,12 @@
     <h3>front-page.php</h3>
 <?php 
     if (have_posts()): 
-        while(have_posts()): the_post();
-            echo '<h1>'. get_the_title(). '</h1>';
+        while(have_posts()): the_post(); ?>
 
-            // the_content(); ?>
+        <h1>
+            <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+        </h1>   
+            
             <hr>
        <?php endwhile;
     endif;
