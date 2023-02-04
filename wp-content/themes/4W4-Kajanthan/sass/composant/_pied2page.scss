@@ -8,12 +8,14 @@
 .site__footer section{
     border: 5px solid lightcoral;
     flex: 1 1 200px;
-    height: 50vh;
+    height: 30vh;
     text-align: center;
-    background-color:pink ;
+    background:radial-gradient(steelblue 20%, lightyellow 10%, pink 25%,steelblue 25%);
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     padding-top: 1em;
-    
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px black;
 }
+
