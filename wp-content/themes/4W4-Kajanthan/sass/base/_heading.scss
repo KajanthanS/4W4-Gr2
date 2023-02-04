@@ -49,13 +49,10 @@ h1 {
     
   }
 
-  footer{
-    background-color: lightcoral;
-  }
-
   .menu{
     display: flex;
     justify-content: space-around;
+    
   }
 
 .menu-item{
@@ -66,6 +63,7 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     border-radius: 100px;
+    
 
   }
   
@@ -75,3 +73,15 @@ h1 {
     
   }
   
+  header{
+    border-bottom: 2px cyan dashed;
+    background-color: white;
+  }
+
+  header h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  header h2{
+    font-family:monospace;
+  }

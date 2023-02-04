@@ -374,10 +374,6 @@ p {
   background-color: lightblue;
 }
 
-footer {
-  background-color: lightcoral;
-}
-
 .menu {
   display: flex;
   justify-content: space-around;
@@ -395,6 +391,19 @@ footer {
 body {
   background-color: lightsteelblue;
   border: 5px purple solid;
+}
+
+header {
+  border-bottom: 2px cyan dashed;
+  background-color: white;
+}
+
+header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h2 {
+  font-family: monospace;
 }
 
 a {
