@@ -411,8 +411,13 @@ a:hover {
 }
 
 .site__footer section {
-  border: 1px solid rgb(194, 84, 84);
+  border: 5px solid lightcoral;
   flex: 1 1 200px;
   height: 50vh;
   text-align: center;
+  background-color: pink;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  padding-top: 1em;
 }/*# sourceMappingURL=style.css.map */
