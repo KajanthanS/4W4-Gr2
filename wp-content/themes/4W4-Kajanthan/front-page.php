@@ -13,7 +13,15 @@
 
         <h1>
             <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-        </h1>   
+        </h1> 
+        
+
+         <!-- Affiche le contenu complet de l'article -->
+        <?php //the_content() ?>
+        
+        <!-- Affiche un résumé de l'article -->
+        <?php //the_excerpt() ?>
+        <?= wp_trim_words(get_the_excerpt(), 10, " ➤") ?>
             
             <hr>
        <?php endwhile;

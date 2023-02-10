@@ -1,3 +1,7 @@
+// CSS font size clamp generator
+// https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+
+
 h1 {
     font-size: clamp(0.875rem, -0.385rem + 2.9231vw, 3.25rem);
   }
@@ -42,40 +46,9 @@ h1 {
       "Lucida Sans", Arial, sans-serif;
   }
   
-  .menu-entete-container{
-    display: flex;
-    background-color: lightblue;
-    
-    
-  }
-
-  .menu{
-    display: flex;
-    justify-content: space-around;
-    
-  }
-
-.menu-item{
-    
-    list-style-type: none;
-    padding: 1em 5.8em;
-    background-color: lightpink;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    border-radius: 100px;
-    
-
-  }
-  
-  body{
-    background-color: lightsteelblue;
-    border: 5px purple solid;
-    
-  }
-  
   header{
-    border-bottom: 2px cyan dashed;
-    background-color: white;
+    border-bottom: 2px darkblue dashed;
+    background-color:aqua;
   }
 
   header h1{

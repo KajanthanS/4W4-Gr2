@@ -8,10 +8,14 @@
 </head>
 
 <body>
-   <header>
-    <?php wp_nav_menu(array(
-        "menu" => "entete"
+   <header class= "sites__header">
+    <section class="sites__header__logo">
+         <?php the_custom_logo() ?> 
+         <?php wp_nav_menu(array(
+            "menu" => "entete",
+            "container" => "nav"
     )) ?>
+    </section>
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>

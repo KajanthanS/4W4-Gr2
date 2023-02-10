@@ -369,33 +369,9 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.menu-entete-container {
-  display: flex;
-  background-color: lightblue;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu-item {
-  list-style-type: none;
-  padding: 1em 5.8em;
-  background-color: lightpink;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-  border-radius: 100px;
-}
-
-body {
-  background-color: lightsteelblue;
-  border: 5px purple solid;
-}
-
 header {
-  border-bottom: 2px cyan dashed;
-  background-color: white;
+  border-bottom: 2px darkblue dashed;
+  background-color: aqua;
 }
 
 header h1 {
@@ -410,7 +386,12 @@ a {
   color: rgb(33, 84, 201);
 }
 a:hover {
-  color: rgb(250, 71, 71);
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: lightsteelblue;
+  border: 5px blue solid;
 }
 
 /* --------------------------------------------- composant */
@@ -421,15 +402,48 @@ a:hover {
 }
 
 .site__footer section {
-  border: 5px solid lightcoral;
+  border: 5px solid rgb(34, 72, 109);
   flex: 1 1 200px;
-  height: 30vh;
+  height: 40vh;
   text-align: center;
-  background: radial-gradient(steelblue 20%, lightyellow 10%, pink 25%, steelblue 25%);
+  background: radial-gradient(steelblue 20%, lightyellow 10%, black 5%, pink 25%, steelblue 25%);
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bolder;
   padding-top: 1em;
   text-decoration: underline;
   text-shadow: 2px 2px 2px black;
+}
+
+.sites__header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.471));
+}
+
+.menu-entete-container {
+  display: flex;
+  background-color: lightblue;
+}
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.menu-entete-container .menu-item {
+  color: aliceblue;
+  padding: 1em 5.8em;
+  background-color: rgb(98, 161, 249);
+  border: solid darkblue 2px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  border-radius: 100px;
+}
+.menu-entete-container .menu-item a {
+  display: block;
+}
+.menu-entete-container .menu-item:hover {
+  background-color: darkblue;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
