@@ -21,7 +21,7 @@
             
             <!-- Affiche un résumé de l'article -->
             <?php //the_excerpt() ?>
-            <p><?= wp_trim_words(get_the_excerpt(), 10, "<span>➤</span>") ?></p>
+            <p><?= wp_trim_words(get_the_excerpt(), 10, " ➤") ?></p>
             
             <hr>
         </article>

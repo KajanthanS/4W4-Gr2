@@ -370,8 +370,11 @@ p {
 }
 
 header {
-  border-bottom: 2px darkblue dashed;
-  background-color: aqua;
+  border-bottom: 10px rgb(250, 76, 76) double;
+  background: rgba(0, 0, 0, 0.6) url(waves.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
 header h1 {
@@ -380,18 +383,20 @@ header h1 {
 
 header h2 {
   font-family: monospace;
+  color: white;
 }
 
 a {
-  color: rgb(33, 84, 201);
+  color: red;
 }
 a:hover {
   color: rgb(255, 255, 255);
 }
 
 body {
-  background-color: slateblue;
-  border: 5px blue solid;
+  background: #a70808 url(rando.jpeg);
+  background-size: cover;
+  background-blend-mode: difference;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -404,11 +409,11 @@ body {
 }
 
 .site__footer section {
-  border: 5px solid rgb(34, 72, 109);
+  border: 5px solid rgb(173, 48, 48);
   flex: 1 1 200px;
   height: 40vh;
   text-align: center;
-  background: radial-gradient(steelblue 20%, lightyellow 10%, black 5%, pink 25%, steelblue 25%);
+  background: radial-gradient(black 20%, lightyellow 10%, darkred 5%, red 25%, black 25%);
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bolder;
@@ -426,7 +431,8 @@ body {
 
 .menu-entete-container {
   display: flex;
-  background-color: lightblue;
+  background-color: rgb(127, 12, 12);
+  border: 2px solid;
 }
 .menu-entete-container .menu {
   display: flex;
@@ -434,11 +440,11 @@ body {
   justify-content: flex-end;
 }
 .menu-entete-container .menu-item {
-  color: aliceblue;
+  color: red;
   padding: 1em 2em;
-  background-color: rgb(98, 161, 249);
+  background-color: rgb(45, 44, 44);
   font-size: 1em;
-  border: solid darkblue 2px;
+  border: solid rgb(235, 39, 39) 2px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
   border-radius: 100px;
@@ -447,7 +453,7 @@ body {
   display: block;
 }
 .menu-entete-container .menu-item:hover {
-  background-color: darkblue;
+  background-color: rgb(115, 14, 14);
   color: white;
 }
 
@@ -458,10 +464,11 @@ body {
   margin: 2rem;
 }
 .blocflex article {
-  border: 1px solid black;
-  box-shadow: 2px 2px 2px blue;
+  border: 1px solid darkslategray;
+  box-shadow: 2px 2px 2px red;
+  color: white;
   border-radius: 10px;
-  background-color: lightblue;
+  background-color: rgb(52, 3, 3);
   padding: 1rem;
   margin: 6px;
 }/*# sourceMappingURL=style.css.map */

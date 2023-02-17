@@ -23,10 +23,11 @@
     margin: 2rem;
   
     article {
-      border: 1px solid black;
-      box-shadow: 2px 2px 2px blue;
+      border: 1px solid darkslategray;
+      box-shadow: 2px 2px 2px red;
+      color: white;
       border-radius: 10px;
-      background-color: lightblue;
+      background-color: rgb(52, 3, 3);
       padding: 1rem;
       margin: 6px;
     }
