@@ -1,8 +1,13 @@
 body{
     background:rgba($color: #a70808, $alpha: 1.0) url(rando.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-blend-mode:difference;
     scroll-behavior: smooth;
     overflow-x:hidden;
   
+  }
+
+  main{
+    color: white;
   }

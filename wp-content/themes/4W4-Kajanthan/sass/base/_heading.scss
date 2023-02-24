@@ -56,10 +56,52 @@ h1 {
 
   header h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
   }
 
   header h2{
     font-family:monospace;
     color: white;
+    animation: animation-titre 7s infinite ease-in;
+    background-color: red;
+    border-radius: 100px;
+    text-align: center;
+    
+  }
+
+  .recherche__input{
+    background-color: black;
+    border:2px inset red;
+    color: red;
+    
+  }
+
+  .recherche__input:hover{
+    background-color: red;
+    border:2px inset white;
+    color: black;
+  }
+
+  .recherche__bouton{
+    background-color: black;
+    border:2px inset red;
+    color: red;
+    
+  }
+
+  .recherche__bouton:hover{
+    background-color: red;
+    border:2px inset white;
+    color: black;
+  }
+
+  @keyframes animation-titre {
+    from{
+      translate: -100%;
+      
+    }
+
+    to{
+      translate: 100%;
+      
+    }
   }

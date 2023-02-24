@@ -384,8 +384,44 @@ header h1 {
 header h2 {
   font-family: monospace;
   color: white;
+  animation: animation-titre 7s infinite ease-in;
+  background-color: red;
+  border-radius: 100px;
+  text-align: center;
 }
 
+.recherche__input {
+  background-color: black;
+  border: 2px inset red;
+  color: red;
+}
+
+.recherche__input:hover {
+  background-color: red;
+  border: 2px inset white;
+  color: black;
+}
+
+.recherche__bouton {
+  background-color: black;
+  border: 2px inset red;
+  color: red;
+}
+
+.recherche__bouton:hover {
+  background-color: red;
+  border: 2px inset white;
+  color: black;
+}
+
+@keyframes animation-titre {
+  from {
+    translate: -100%;
+  }
+  to {
+    translate: 100%;
+  }
+}
 a {
   color: red;
 }
@@ -396,9 +432,14 @@ a:hover {
 body {
   background: #a70808 url(rando.jpeg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-blend-mode: difference;
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+main {
+  color: white;
 }
 
 /* --------------------------------------------- composant */
@@ -429,9 +470,15 @@ body {
   filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.471));
 }
 
+.logomenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .menu-entete-container {
   display: flex;
-  background-color: rgb(127, 12, 12);
+  background-color: rgba(0, 0, 0, 0.515);
   border: 2px solid;
 }
 .menu-entete-container .menu {
@@ -440,13 +487,13 @@ body {
   justify-content: flex-end;
 }
 .menu-entete-container .menu-item {
+  display: flex;
   color: red;
   padding: 1em 2em;
-  background-color: rgb(45, 44, 44);
   font-size: 1em;
-  border: solid rgb(235, 39, 39) 2px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
+  justify-items: center;
   border-radius: 100px;
 }
 .menu-entete-container .menu-item a {
