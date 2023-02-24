@@ -442,6 +442,10 @@ main {
   color: white;
 }
 
+code {
+  display: none;
+}
+
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -474,36 +478,109 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 1em;
 }
 
 .menu-entete-container {
-  display: flex;
   background-color: rgba(0, 0, 0, 0.515);
   border: 2px solid;
+  border-radius: 50px;
+  margin-left: 1em;
+  margin-top: 1em;
+  height: 12em;
 }
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
+  margin-bottom: 1.5em;
+  flex-direction: column;
+  padding-right: 2.5em;
 }
 .menu-entete-container .menu-item {
   display: flex;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: red;
   padding: 1em 2em;
-  font-size: 1em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  text-align: center;
   justify-items: center;
+  font-size: 0.6em;
   border-radius: 100px;
 }
 .menu-entete-container .menu-item a {
   display: block;
 }
-.menu-entete-container .menu-item:hover {
+
+.menu-item:hover {
   background-color: rgb(115, 14, 14);
   color: white;
 }
 
+.icon-burger {
+  display: none;
+  color: black;
+  background-color: red;
+  border-radius: 100px;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu-entete-container {
+    background-color: rgba(0, 0, 0, 0.515);
+    border: 2px solid;
+    border-radius: 50px;
+    margin-left: 1em;
+    margin-top: 1em;
+    height: 12em;
+    width: 30em;
+  }
+  .menu-entete-container .menu {
+    margin-bottom: 1.5em;
+    flex-direction: column;
+    padding-right: 2.5em;
+  }
+  .menu-entete-container .menu-item {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 0.6em;
+    border-radius: 100px;
+  }
+  .menu-entete-container .menu-item a {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-entete-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.515);
+    border: 2px solid;
+    border-radius: 100px;
+    margin-left: 2em;
+    height: 6em;
+  }
+  .menu-entete-container .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  .menu-entete-container .menu-item {
+    display: flex;
+    color: red;
+    padding: 1em 2em;
+    font-size: 0.8em;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .menu-entete-container .menu-item a {
+    display: block;
+  }
+}
 .blocflex {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
