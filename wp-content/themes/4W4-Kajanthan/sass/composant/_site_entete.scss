@@ -1,6 +1,6 @@
 //-------------------------- MENU ENTETE --------------------------------
 
-.sites__header__logo{
+.site__header__logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,15 +63,7 @@
     background-color: red;
     border-radius: 100px;
     padding: 0.5em;
-  }
-
-
-// Requête média mobile
-@media screen and (min-width: 500px) {
-      
-   
-  }
-
+}
 
 
 // Requête média tablette

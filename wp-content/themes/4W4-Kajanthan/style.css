@@ -371,10 +371,6 @@ p {
 
 header {
   border-bottom: 10px rgb(250, 76, 76) double;
-  background: rgba(0, 0, 0, 0.6) url(waves.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
 }
 
 header h1 {
@@ -416,10 +412,10 @@ header h2 {
 
 @keyframes animation-titre {
   from {
-    translate: -100%;
+    translate: -110%;
   }
   to {
-    translate: 100%;
+    translate: 110%;
   }
 }
 a {
@@ -467,7 +463,7 @@ code {
   text-shadow: 2px 2px 2px black;
 }
 
-.sites__header__logo {
+.site__header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -595,4 +591,40 @@ code {
   background-color: rgb(52, 3, 3);
   padding: 1rem;
   margin: 6px;
+}
+
+/* --------------------------------------------- layout */
+.site__header {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background: rgba(0, 0, 0, 0.6) url(waves.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site__footer {
+  grid-area: footer;
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(128, 30, 30);
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */

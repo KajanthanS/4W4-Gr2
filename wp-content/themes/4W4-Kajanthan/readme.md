@@ -1,4 +1,4 @@
-# Laboratoire 1
+# TP1
 ## 4W4 - Conception d'interface et développement web
 ### Auteur: Kajanthan Seevarathinam
 #### Description

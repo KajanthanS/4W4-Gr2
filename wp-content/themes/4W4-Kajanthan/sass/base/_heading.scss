@@ -48,10 +48,7 @@ h1 {
   
   header{
     border-bottom: 10px rgb(250, 76, 76) double;
-    background:rgba(0, 0, 0, 0.6) url(waves.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
+    
   }
 
   header h1{
@@ -97,12 +94,12 @@ h1 {
 
   @keyframes animation-titre {
     from{
-      translate: -100%;
+      translate: -110%;
       
     }
 
     to{
-      translate: 100%;
+      translate: 110%;
       
     }
   }
