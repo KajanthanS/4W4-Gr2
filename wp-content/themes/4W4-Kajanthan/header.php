@@ -29,8 +29,10 @@
 
    <aside class="site__aside">
         <h3>Menu secondaire</h3>
-        <?php wp_nav_menu(array(
-            "menu" => "aside",
+        <?php 
+        $ma_categorie = "4w4";
+        wp_nav_menu(array(
+            "menu" => $ma_categorie,
             "container" => "nav"
         )); ?>
    </aside>
