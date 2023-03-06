@@ -10,21 +10,12 @@
 <?php 
     if (have_posts()): 
         while(have_posts()): the_post(); ?>
-        <article>
-            <h2>
-            <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-            </h2> 
-        
-
-            <!-- Affiche le contenu complet de l'article -->
-            <?php //the_content() ?>
-            
-            <!-- Affiche un résumé de l'article -->
-            <?php //the_excerpt() ?>
-            <p><?= wp_trim_words(get_the_excerpt(), 10, " ➤") ?></p>
-            
-            <hr>
-        </article>
+        <?php 
+            $la_categorie = "4w4";
+            if(in_category("galerie")){
+                $la_categorie = "galerie";
+        }
+       get_template_part('template-parts/categorie',$la_categorie); ?>
        
        <?php endwhile;
         endif;
