@@ -1,0 +1,26 @@
+// Bouton burger
+.icon-burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    
+    @media screen and (min-width:800px){
+        display: none;
+    }
+   
+}
+
+.icon-burger:hover{
+    transform: rotateX(90deg);
+}
+
+@keyframes tourner {
+    from{
+        transform: rotateX(180deg);
+    }
+
+    to{
+        transform: rotateX(90deg);
+    }
+}

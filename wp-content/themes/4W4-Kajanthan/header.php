@@ -9,30 +9,35 @@
 
     <?php wp_head(); ?>
 </head>
+<?php 
+$nouvelle_classe = "";
+if(is_front_page())(
+    $nouvelle_classe = "no-aside"
+)
+?>
 
-<body class="site">
+<body class="site <?php echo (is_front_page()?'no-aside':'');?>">
+<!-- <body class="site <?= $nouvelle_classe; ?> -->
    <header class="site__header">
     <section class="site__header__logo">
-        <div class="logomenu">
-         <?php the_custom_logo() ?> 
-         <?php wp_nav_menu(array(
-            "menu" => "entete",
-            "container" => "nav"
-            )) ?>
+         <?php the_custom_logo()?> 
+        <div class="menu__recherche">
+            <input type="checkbox" id="check-menu">
+            <?php wp_nav_menu(array(
+                "menu" => "entete",
+                "container" => "nav"
+                )) ?>
+            
+            <?php get_search_form() ?>
+            <label class="icon-burger" for="check-menu"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff0f0" width="32" height="32"></label>
+            
         </div>
-        <h3 class="icon-burger"><span class="material-symbols-outlined">menu</span></h3>
-    <?php get_search_form() ?>
     </section>
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>
-
-   <aside class="site__aside">
-        <h3>Menu secondaire</h3>
-        <?php 
-        $ma_categorie = "4w4";
-        wp_nav_menu(array(
-            "menu" => $ma_categorie,
-            "container" => "nav"
-        )); ?>
-   </aside>
+   <?php 
+    if ( ! is_front_page()){
+    get_template_part("template-parts/aside"); 
+    }
+    ?>

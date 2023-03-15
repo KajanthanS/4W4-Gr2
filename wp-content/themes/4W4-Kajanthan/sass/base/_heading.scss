@@ -38,12 +38,11 @@ h1 {
   h4,
   h5,
   h6 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: 'Metal Mania', cursive;
   }
   
   p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+    font-family: 'Yuji Boku', serif;
   }
   
   header{
@@ -52,45 +51,25 @@ h1 {
   }
 
   header h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Bokor', cursive;
+    font-size: 2em;
   }
 
   header h2{
-    font-family:monospace;
+    font-family: 'Metal Mania', cursive;
+    font-size: 1.6em;
     color: white;
-    animation: animation-titre 7s infinite ease-in;
-    background-color: red;
+    animation: animation-titre 10s infinite ease-in;
+    background:linear-gradient(red,darkred);
     border-radius: 100px;
     text-align: center;
+
+    @media screen and (min-width: $largeur__bureau) {
+      font-size: 3em;
+  }
     
   }
 
-
-  .recherche__input{
-    background-color: black;
-    border:2px inset red;
-    color: red;
-    
-  }
-
-  .recherche__input:hover{
-    background-color: red;
-    border:2px inset white;
-    color: black;
-  }
-
-  .recherche__bouton{
-    background-color: black;
-    border:2px inset red;
-    color: red;
-    
-  }
-
-  .recherche__bouton:hover{
-    background-color: red;
-    border:2px inset white;
-    color: black;
-  }
 
   @keyframes animation-titre {
     from{

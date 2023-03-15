@@ -6,9 +6,25 @@ wp_enqueue_style(   'style-principale',  // identificateur du link css
                     get_template_directory_uri() . '/style.css',  // enroit où se trouve le fichier style.css
                     array(), // les fichiers css qui dépendent de style.css
                     filemtime(get_template_directory() . '/style.css')  // version de notre style.css
+
+                    
 ); 
+
+wp_enqueue_style('style-googlefont-yuji',"https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap",
+                false);
+
+wp_enqueue_style('style-googlefont-bokor',"https://fonts.googleapis.com/css2?family=Bokor&display=swap",
+                false);
+
+wp_enqueue_style('style-googlefont-metal',"https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap",
+                false);
+
+// <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 }
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
+
+
+
 
 
 
@@ -20,6 +36,20 @@ function enregistrement_nav_menu(){
     ) );
 }
 add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
+
+/* ----------------------------------- Modification des choix de menu cours */
+function personnalisation_menu_item_title($title, $item, $args, $depth) {
+    // Remplacer 'cours' par l'identifiant de votre menu
+    if($args->menu == 'cours') {
+// Modifier la longueur du titre en fonction de vos besoins
+$sigle = substr($title,0,7);
+$title = substr($title,7);
+$title = "<code>" . $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>";
+}
+return $title;
+}
+add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
+
 
 /*---------------------------- add_theme_support() */
 add_theme_support('title-tag');
@@ -45,5 +75,8 @@ function cidweb_modifie_requete_principal( $query ) {
       $query->set( 'orderby', 'title' );
       $query->set( 'order', 'ASC' );
       }
+      
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+
+     

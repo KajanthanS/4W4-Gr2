@@ -31,7 +31,6 @@
     flex: 1 0 300px;
     flex-direction: column;
     justify-content: space-between;
-    
     border: 1px solid darkslategray;
     box-shadow: 2px 2px 2px red;
     color: white;
@@ -44,9 +43,37 @@
       margin: 0;
       padding: 0.2em;
     }
+
+    p{
+      font-family: 'Yuji Boku', serif;
+      font-size: 1em;
+    }
+    h2{
+      font-family: 'Bokor', cursive;
+    }
+  }
+
+  .blocflex__article:hover {
+    animation: animation-bloc 2s infinite ease-in-out;
+    border: white 3px solid;
+    
   }
 
   .blocflex__galerie{
     display: flex;
     flex:1 0 100%
   }
+
+  @keyframes animation-bloc {
+    from,to{
+      scale: 100%;
+      
+    }
+
+    50%{
+      scale: 90%;
+    }
+
+  }
+
+  

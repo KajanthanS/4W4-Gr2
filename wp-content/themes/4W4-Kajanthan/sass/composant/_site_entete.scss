@@ -8,11 +8,42 @@
 
 }
 
-.logomenu{
+.site__header__logo a>img{
+    animation: inverser-logo 3s infinite ease-in-out;
+    
+    
+}
+
+@keyframes inverser-logo {
+    from,to{
+        transform: rotateY(0deg);
+    }
+
+    50%{
+        transform: rotateY(180deg);
+        filter: drop-shadow(2px 2px #ffffffb2);
+    }
+}
+
+#check-menu{
+    display: none;
+}
+
+#check-menu:checked ~ .menu-entete-container{
+    transform: translateX(0);
+}
+
+.menu__recherche{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width:$largeur__bureau){
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
    
 }
 
@@ -22,26 +53,42 @@
     border-radius:50px;
     margin-left: 1em;
     margin-top: 1em;
-    height: 12em;
+    transform: translateX(300px);
+    transition: transform 2.5s;
+    margin-right: 1em;
+    @media screen and (min-width:$largeur__tablette) {
+        transform:translateX(0);
+        margin-bottom: 2em;
+        
+    }
+    
         
     .menu{
         display: flex;
         list-style-type: none;
-        justify-content: flex-end;
+        align-items: flex-end;
+        justify-content: flex-start;
         margin-bottom:1.5em;
         flex-direction: column;
         padding-right: 2.5em;
+        @media screen and (min-width:$largeur__tablette) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 1.2em;
+         
+        }
 
     }
 
     .menu-item{
         display: flex;
         text-align:center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Yuji Boku', serif;
         color: red;
         padding: 1em 2em;
         justify-items:center;
-        font-size: 0.6em;
+        font-size: 0.7em;
         border-radius: 100px;
             a{
               display: block;
@@ -57,94 +104,42 @@
         }
 
 
-.icon-burger{
-    display: none;
-    color: black;
+
+
+// Barre de recherche
+.recherche{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Metal Mania', cursive;
+}
+.recherche__input{
+    display: flex;
+    background-color: black;
+    border:2px inset red;
+    color: white;
+    margin-right: 0.5em;
+    
+    
+  }
+
+  .recherche__input:hover{
     background-color: red;
-    border-radius: 100px;
-    padding: 0.5em;
-}
+    border:2px inset white;
+    color: black;
+  }
 
+  .recherche__bouton{
+    background-color: black;
+    border:2px inset red;
+    color: red;
+    
+  }
 
-// Requête média tablette
-@media screen and (min-width: 768px) and (max-width:991px){
-      
-    .menu-entete-container{
-        background-color: rgba(0, 0, 0, 0.515);
-        border: 2px solid;
-        border-radius:50px;
-        margin-left: 1em;
-        margin-top: 1em;
-        height: 12em;
-        width: 30em;
-        
-        
-        .menu{
-            margin-bottom:1.5em;
-            flex-direction: column;
-            padding-right: 2.5em;
-            
-
-        }
-
-        .menu-item{
-            
-            text-align:center;
-            align-items: center;
-            justify-items:center;
-            font-size: 0.6em;
-
-            border-radius: 100px;
-             a{
-                display: block;
-                
-             }
-        
-          }
-    }
+  .recherche__bouton:hover{
+    background-color: red;
+    border:2px inset white;
+    color: black;
   }
 
 
-  // Requête média ordi
-@media screen and (min-width: 992px) {
-      
-    .menu-entete-container{
-        display: flex;
-        background-color: rgba(0, 0, 0, 0.515);
-        border: 2px solid;
-        border-radius: 100px;
-        margin-left: 2em;
-        height: 6em;
-        
-        
-        
-        
-        .menu{
-            display: flex;
-            list-style-type: none;
-            justify-content: flex-end;
-            flex-direction:row;
-        
-        }
-    
-        .menu-item{
-            display: flex;
-            color: red;
-            padding: 1em 2em;
-            font-size: 0.8em;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            text-align: center;
-            align-items: center;
-            justify-items: center;
-            border-radius: 100px;
-            white-space:nowrap;
 
-             a{
-                display: block;
-                
-             }
-        
-        }
-    
-  }
-}
