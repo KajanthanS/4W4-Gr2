@@ -45,6 +45,11 @@ function personnalisation_menu_item_title($title, $item, $args, $depth) {
 $sigle = substr($title,0,7);
 $title = substr($title,7);
 $title = "<code>" . $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>";
+} else if($args->menu == 'Notes-4w4') {
+    // Modifier la longueur du titre en fonction de vos besoins
+    $sigle = substr($title,0,2);
+    $title = substr($title,3);
+    $title = "<code>" . $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>";
 }
 return $title;
 }
