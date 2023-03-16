@@ -666,6 +666,7 @@ p {
 }
 .blocflex__article h2 {
   font-family: "Bokor", cursive;
+  font-size: 2em;
 }
 
 .blocflex__article:hover {
@@ -708,6 +709,14 @@ p {
 .site__aside {
   grid-area: aside;
   background-color: rgb(128, 30, 30);
+}
+.site__aside h3 {
+  margin: 1em;
+  text-decoration: underline;
+}
+.site__aside li {
+  list-style: disclosure-open;
+  font-size: 1em;
 }
 
 .site {

@@ -21,6 +21,17 @@
   .site__aside {
     grid-area: aside;
     background-color: rgb(128, 30, 30);
+    
+    
+    h3{
+      margin: 1em;
+      text-decoration:underline;
+    }
+
+    li{
+      list-style:disclosure-open;
+      font-size: 1em;
+    }
   }
 
 
