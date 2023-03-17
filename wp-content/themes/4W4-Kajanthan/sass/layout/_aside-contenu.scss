@@ -28,11 +28,16 @@
       text-decoration:underline;
       color: rgb(156, 6, 6);
       font-family: 'Bokor', cursive;
+      font-size: 1.5em;
     }
 
     li{
       list-style:disclosure-open;
       color: white;
+      font-size: 1em;
+    }
+
+    p{
       font-size: 1em;
     }
   }
