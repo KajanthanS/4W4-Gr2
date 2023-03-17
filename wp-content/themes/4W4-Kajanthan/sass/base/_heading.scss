@@ -26,19 +26,23 @@ h1 {
   }
   
   h1 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  }
-  
-  h2 {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    /* font-family: "Slackey", cursive; */
-  }
-  
-  h3,
-  h4,
-  h5,
-  h6 {
     font-family: 'Metal Mania', cursive;
+    margin: 1em;
+    text-decoration: underline;
+    color: orangered;
+    font-size: 3em;
+  }
+  
+  .single h2 {
+    font-family: 'Metal Mania', cursive;
+    margin: 1em;
+    font-size: 2em;
+  }
+  
+  .single h3,h4,h5,h6 {
+    font-family: 'Metal Mania', cursive;
+    margin: 1em;
+    font-size: 2em;
   }
   
   p {
