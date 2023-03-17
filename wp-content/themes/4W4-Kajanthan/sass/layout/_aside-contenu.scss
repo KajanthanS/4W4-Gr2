@@ -20,16 +20,19 @@
 
   .site__aside {
     grid-area: aside;
-    background-color: rgb(128, 30, 30);
+    background-color: rgb(60, 12, 12);
     
     
     h3{
       margin: 1em;
       text-decoration:underline;
+      color: rgb(156, 6, 6);
+      font-family: 'Bokor', cursive;
     }
 
     li{
       list-style:disclosure-open;
+      color: white;
       font-size: 1em;
     }
   }
