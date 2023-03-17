@@ -424,6 +424,10 @@ body {
 main {
   color: white;
 }
+main li {
+  list-style-type: none;
+  margin-top: 1em;
+}
 
 .single {
   background: #a70808 url(main.jpeg);
@@ -442,6 +446,7 @@ code {
 
 p {
   color: white;
+  font-size: 1em;
   margin: 1em;
 }
 
