@@ -425,6 +425,21 @@ main {
   color: white;
 }
 
+.single {
+  background: #a70808 url(main.jpeg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+pre {
+  margin: 1em;
+}
+
+code {
+  margin: 1em;
+}
+
 p {
   color: white;
 }

@@ -12,18 +12,18 @@
     <section class="colonne2">
         <div class="texte2">
             <h1>Liens</h1>
-       <a class="img-tourne" href="https://github.com/KajanthanS"><img src="https://s2.svgbox.net/social.svg?ic=github&color=ff6b6b" width="32" height="32"></a>
+       <a class="img-tourne" href="https://github.com/KajanthanS"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=github&color=ff6b6b" width="32" height="32"></a>
        
-       <a class="img-tourne" href="https://www.linkedin.com/in/kajanthan-seevarathinam-551a3a249/"><img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=ff6b6b" width="32" height="32"></a>
+       <a class="img-tourne" href="https://www.linkedin.com/in/kajanthan-seevarathinam-551a3a249/"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=ff6b6b" width="32" height="32"></a>
         </div>
     </section>
 
     <section class="colonne3">
         <div class="texte3">
             <h1>Réseaux sociaux</h1>
-        <a class="img-tourne" href="https://www.facebook.com/"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=ff6b6b" width="32" height="32"></a>
-        <a class="img-tourne" href="https://www.instagram.com/"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=ff6b6b" width="32" height="32"></a>
-        <a class="img-tourne" href="https://twitter.com/home"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=ff6b6b" width="32" height="32"></a>
+        <a class="img-tourne" href="https://www.facebook.com/" target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=ff6b6b" width="32" height="32"></a>
+        <a class="img-tourne" href="https://www.instagram.com/"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=ff6b6b" width="32" height="32"></a>
+        <a class="img-tourne" href="https://twitter.com/home"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=ff6b6b" width="32" height="32"></a>
         </div>
     </section>
 
