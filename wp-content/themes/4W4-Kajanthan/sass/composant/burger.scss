@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 25px;
+    animation: tourner 3s infinite ease-in;
     
     @media screen and (min-width:800px){
         display: none;
@@ -11,9 +12,8 @@
    
 }
 
-.icon-burger:hover{
-    transform: rotateX(90deg);
-}
+
+
 
 @keyframes tourner {
     from{

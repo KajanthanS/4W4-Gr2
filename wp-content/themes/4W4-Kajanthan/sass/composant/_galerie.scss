@@ -1,0 +1,16 @@
+.wp-block-image:hover{
+    
+    animation: animation-galerie 2s infinite ease-in-out;
+}
+@keyframes animation-galerie {
+    from,to{
+      scale: 100%;
+      border: white 2px ridge;
+    }
+
+    50%{
+      scale: 90%;
+      border: red 2px ridge;
+    }
+
+  }

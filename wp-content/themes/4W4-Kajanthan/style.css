@@ -618,15 +618,12 @@ p {
   justify-content: center;
   align-items: center;
   width: 25px;
+  animation: tourner 3s infinite ease-in;
 }
 @media screen and (min-width: 800px) {
   .icon-burger {
     display: none;
   }
-}
-
-.icon-burger:hover {
-  transform: rotateX(90deg);
 }
 
 @keyframes tourner {
@@ -686,6 +683,20 @@ p {
   }
   50% {
     scale: 90%;
+  }
+}
+.wp-block-image:hover {
+  animation: animation-galerie 2s infinite ease-in-out;
+}
+
+@keyframes animation-galerie {
+  from, to {
+    scale: 100%;
+    border: white 2px ridge;
+  }
+  50% {
+    scale: 90%;
+    border: red 2px ridge;
   }
 }
 /* --------------------------------------------- layout */
