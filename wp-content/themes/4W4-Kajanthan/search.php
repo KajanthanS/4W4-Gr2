@@ -6,6 +6,12 @@
 ?>
 <?php get_header(); ?>
 
+<?php 
+$nouvelle_classe = "";
+if(is_search())(
+    $nouvelle_classe = "no-aside"
+)
+?>
 
 
 <main class="site <?php echo (is_search()?'no-aside':'');?>">
@@ -24,9 +30,4 @@
 
 </main>
 
-<?php 
-    if (!is_search()) {
-    get_template_part("template-parts/aside"); 
-    }
-?>
 <?php get_footer(); ?>
