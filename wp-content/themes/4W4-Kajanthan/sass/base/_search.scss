@@ -1,0 +1,6 @@
+.article__search{
+    background-color: black;
+    @media screen and (min-width:$largeur__bureau){
+        width: 150vw;
+    }
+}

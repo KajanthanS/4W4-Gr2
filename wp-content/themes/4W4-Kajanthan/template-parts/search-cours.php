@@ -4,12 +4,13 @@
                $titre_long = substr($titre,7,-5);
                $duree = substr($titre, strpos($titre,'('));
                ?>
-<article class=" blocflex__article">         
-               <h2><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h2>
-               <h5><?= $titre_long; ?></h5>
-               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-               <h5><?= $duree; ?></h5>
-               <p><?php the_field('enseignant') ?></p>
-               <p><?php the_field('domaine') ?></p>
+<article class="article__search">         
+               <h4><?= $titre_long; ?></h4>
+               <p><?= $sigle; ?></p>
+               <p><?= $duree; ?></p>
+               <p>Enseignant: <?php the_field('enseignant') ?></p>
+               <p>Domaine: <?php the_field('domaine') ?></p>
+               <p><?= wp_trim_words(get_the_excerpt(),100) ?></p>
+
 
 </article>

@@ -454,6 +454,15 @@ hr {
   border: orangered ridge 2px;
 }
 
+.article__search {
+  background-color: black;
+}
+@media screen and (min-width: 1000px) {
+  .article__search {
+    width: 150vw;
+  }
+}
+
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
