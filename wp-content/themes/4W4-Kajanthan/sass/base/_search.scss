@@ -1,6 +1,20 @@
 .article__search{
-    background-color: black;
+    background-color:rgba($color: #000000ce, $alpha: 0.5);
+    border: white 1px solid;
     @media screen and (min-width:$largeur__bureau){
         width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align:left;
+        p{
+            font-size: 1em;
+            
+        }
+
+        h4{
+            font-size: 1.5em;
+        }
+        
     }
 }
