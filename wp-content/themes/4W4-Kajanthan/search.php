@@ -6,7 +6,10 @@
 ?>
 <?php get_header(); ?>
 
+
+
 <main class="site <?php echo (is_search()?'no-aside':'');?>">
+
     <h3>Résultats de la recherche</h3>
 <?php 
     if (have_posts()): 
@@ -18,6 +21,12 @@
        <?php endwhile;
     endif;
 ?>
+
 </main>
 
+<?php 
+    if (!is_search()) {
+    get_template_part("template-parts/aside"); 
+    }
+?>
 <?php get_footer(); ?>
