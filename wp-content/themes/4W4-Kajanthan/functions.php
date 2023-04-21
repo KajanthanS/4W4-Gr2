@@ -24,6 +24,29 @@ wp_enqueue_style('style-googlefont-metal',"https://fonts.googleapis.com/css2?fam
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 
 
+// Enregistrer le sidebar
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'footer 1', '4w4-Kajanthan' ),
+        'id' => 'footer_1',
+        'description' => __( 'Une zone pour afficher des widgets dans le footer.', '4w4-Kajanthan' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'footer 2', '4w4-Kajanthan' ),
+        'id' => 'footer_2',
+        'description' => __( 'Une zone pour afficher des widgets dans le footer.', '4w4-Kajanthan' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
 
 
 

@@ -27,6 +27,12 @@
         </div>
     </section>
 
+    <section class="colonne4">
+        <div class="sidebar">
+        <?php dynamic_sidebar( 'footer_1' ); ?>
+        </div>
+    </section>
+
 </footer>
 <?php wp_footer(); ?>
 </body>
