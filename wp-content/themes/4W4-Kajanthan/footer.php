@@ -7,6 +7,9 @@
             <h2>Téléphone: (123) 456-7890</h2>
             <h2>Courriel: HelloWorld@gmail.com</h2>
         </div>
+        <div class="sidebar">
+        <?php dynamic_sidebar( 'footer_2' ); ?>
+        </div>
     </section>
     
     <section class="colonne2">
@@ -25,13 +28,17 @@
         <a class="img-tourne" href="https://www.instagram.com/"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=ff6b6b" width="32" height="32"></a>
         <a class="img-tourne" href="https://twitter.com/home"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=ff6b6b" width="32" height="32"></a>
         </div>
+        
     </section>
 
     <section class="colonne4">
         <div class="sidebar">
         <?php dynamic_sidebar( 'footer_1' ); ?>
         </div>
+        
     </section>
+
+    
 
 </footer>
 <?php wp_footer(); ?>
