@@ -507,9 +507,19 @@ hr {
   animation: inverser 3s infinite ease-in-out;
 }
 
+.wp-block-avatar {
+  animation: invert 1s infinite ease-in-out;
+  margin: 1em;
+}
+
+.wp-block-avatar:hover {
+  transform: scale(105%);
+  margin: 1.5em;
+}
+
 iframe {
   border: 5px red solid;
-  margin-right: 20em;
+  margin: 0.5em 0;
   animation: invert 3s infinite ease-in-out;
 }
 
