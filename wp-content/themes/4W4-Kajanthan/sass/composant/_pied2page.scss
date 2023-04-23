@@ -13,7 +13,7 @@
     border-top: 8px ridge rgb(173, 48, 48);
     border-bottom: 8px ridge rgb(173, 48, 48);
     flex: 1 1 300px;
-    height: 40vh;
+    height: 45vh;
     background:black;
     color: white;
     font-weight: bolder;
@@ -55,6 +55,24 @@
     
     
 }
+
+iframe{
+    border: 5px red solid;
+    margin-right:20em;
+    animation: invert 3s infinite ease-in-out;
+}
+
+@keyframes invert {
+    from,to{
+        filter: invert(100%);
+    }
+
+    50%{
+        filter: invert(0%);
+    }
+}
+
+
 
 @keyframes inverser {
     from,to{
