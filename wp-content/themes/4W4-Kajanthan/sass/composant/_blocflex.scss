@@ -2,9 +2,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
     margin: 2rem;
    
+}
+
+.blocflex1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 250vh;
+  margin: 2rem;
+ 
 }
 
   .blocflex__article {
