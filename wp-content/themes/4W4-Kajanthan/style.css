@@ -406,7 +406,7 @@ header h2 {
   }
 }
 a {
-  color: red;
+  color: rgb(255, 54, 54);
 }
 a:hover {
   color: rgb(255, 255, 255);
@@ -698,7 +698,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 250vh;
+  min-height: 200vh;
   margin: 2rem;
 }
 
@@ -738,6 +738,7 @@ iframe {
 
 .blocflex__galerie {
   display: flex;
+  margin-bottom: 2em;
   flex: 1 0 100%;
 }
 
@@ -771,7 +772,11 @@ iframe {
   flex-direction: column;
   justify-content: space-between;
   border: 3px solid red;
-  height: 50px;
+  height: 100px;
+  margin: 10px;
+}
+.menu-evenement-container .menu a {
+  font-size: 2rem;
 }
 
 /* --------------------------------------------- layout */

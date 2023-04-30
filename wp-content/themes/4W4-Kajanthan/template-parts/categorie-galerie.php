@@ -7,10 +7,6 @@
    <div>
    <?php the_content(); ?>
    </div>
-
-    <?php the_field('couleur') ?>
-    <p><?php the_field('message') ?></p>
-    <p><?php the_field('style') ?></p>
  </article>
 
  

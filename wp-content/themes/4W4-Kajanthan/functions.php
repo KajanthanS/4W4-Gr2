@@ -81,6 +81,7 @@ add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
 
 /*---------------------------- add_theme_support() */
 add_theme_support('title-tag');
+add_theme_support('post-thumbnails');
 add_theme_support('custom-logo',
     array(
         'height' => 150,
