@@ -778,6 +778,10 @@ iframe {
 .menu-evenement-container .menu a {
   font-size: 2rem;
 }
+.menu-evenement-container .menu a span {
+  display: block;
+  font-size: 0.9em;
+}
 
 /* --------------------------------------------- layout */
 .site__header {

@@ -10,8 +10,11 @@
             margin: 10px;
         }
         a{
-           
             font-size: 2rem;
+            span{
+                display: block;
+                font-size: 0.9em;
+            }
         }
     }
 
