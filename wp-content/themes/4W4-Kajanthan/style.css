@@ -419,6 +419,7 @@ body {
   background-blend-mode: difference;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  cursor: help;
 }
 
 main {
@@ -764,23 +765,43 @@ iframe {
     border: red 2px ridge;
   }
 }
-.menu-evenement-container .menu {
+.menu-evenementmenu-container .menu {
   display: flex;
 }
-.menu-evenement-container .menu .menu-item {
+.menu-evenementmenu-container .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 3px solid darkred;
+  height: 300px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.515);
+}
+.menu-evenementmenu-container .menu .menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.806);
+}
+.menu-evenementmenu-container .menu a {
+  font-size: 2rem;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 3px solid red;
-  height: 100px;
-  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
 }
-.menu-evenement-container .menu a {
-  font-size: 2rem;
+.menu-evenementmenu-container .menu a .title {
+  display: flex;
+  font-size: 1em;
+  text-decoration: underline;
 }
-.menu-evenement-container .menu a span {
+.menu-evenementmenu-container .menu a .description {
+  font-size: 0.6em;
+  text-decoration-line: none;
+}
+.menu-evenementmenu-container .menu a .menu-thumbnail {
   display: block;
-  font-size: 0.9em;
+  border: 2px solid red;
 }
 
 /* --------------------------------------------- layout */
