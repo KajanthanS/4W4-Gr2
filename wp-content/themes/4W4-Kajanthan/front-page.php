@@ -12,6 +12,12 @@
             "container" => "nav"
 
         )) ?>
+
+        <?php wp_nav_menu(array(
+                    "menu" => "bloc_archive",
+                    "container" => "nav"
+
+        )) ?>
     </sectiont>
    <section class="blocflex">
 <?php 
