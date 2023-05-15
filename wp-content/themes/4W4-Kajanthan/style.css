@@ -823,6 +823,12 @@ iframe {
   border: 2px solid red;
 }
 
+.menu-bloc_archive-container .menu-item {
+  background-image: url("noterbook.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* --------------------------------------------- layout */
 .site__header {
   grid-area: header;
