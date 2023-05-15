@@ -771,7 +771,7 @@ iframe {
 .menu-evenementmenu-container .menu .menu-item, .menu-bloc_archive-container .menu .menu-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 3px solid darkred;
   height: 150px;
   margin: 10px;
@@ -801,12 +801,22 @@ iframe {
 }
 .menu-evenementmenu-container .menu a .title, .menu-bloc_archive-container .menu a .title {
   display: flex;
-  font-size: 1em;
+  font-size: 0.5em;
   text-decoration: underline;
 }
+@media screen and (min-width: 1000px) {
+  .menu-evenementmenu-container .menu a .title, .menu-bloc_archive-container .menu a .title {
+    font-size: 1em;
+  }
+}
 .menu-evenementmenu-container .menu a .description, .menu-bloc_archive-container .menu a .description {
-  font-size: 0.6em;
+  font-size: 0.4em;
   text-decoration-line: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-evenementmenu-container .menu a .description, .menu-bloc_archive-container .menu a .description {
+    font-size: 0.6em;
+  }
 }
 .menu-evenementmenu-container .menu a .menu-thumbnail, .menu-bloc_archive-container .menu a .menu-thumbnail {
   display: none;
