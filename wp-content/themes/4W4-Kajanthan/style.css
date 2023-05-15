@@ -767,13 +767,14 @@ iframe {
 }
 .menu-evenementmenu-container .menu, .menu-bloc_archive-container .menu {
   display: flex;
+  margin-right: 3em;
 }
 .menu-evenementmenu-container .menu .menu-item, .menu-bloc_archive-container .menu .menu-item {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   border: 3px solid darkred;
-  height: 150px;
+  height: 200px;
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.515);
 }
@@ -806,7 +807,7 @@ iframe {
 }
 @media screen and (min-width: 1000px) {
   .menu-evenementmenu-container .menu a .title, .menu-bloc_archive-container .menu a .title {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 .menu-evenementmenu-container .menu a .description, .menu-bloc_archive-container .menu a .description {
@@ -815,7 +816,7 @@ iframe {
 }
 @media screen and (min-width: 1000px) {
   .menu-evenementmenu-container .menu a .description, .menu-bloc_archive-container .menu a .description {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
 }
 .menu-evenementmenu-container .menu a .menu-thumbnail, .menu-bloc_archive-container .menu a .menu-thumbnail {
@@ -823,10 +824,17 @@ iframe {
   border: 2px solid red;
 }
 
+.menu-bloc_archive-container {
+  margin-left: 1.5em;
+}
 .menu-bloc_archive-container .menu-item {
   background-image: url("noterbook.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.menu-bloc_archive-container .description {
+  padding-bottom: 8em;
+  font-size: 2em;
 }
 
 /* --------------------------------------------- layout */

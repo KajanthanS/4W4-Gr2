@@ -1,13 +1,14 @@
 .menu-evenementmenu-container, .menu-bloc_archive-container{
     .menu{
         display:flex;
+        margin-right: 3em;
         
         .menu-item{
             display:flex;
             flex-direction: row;
             justify-content: space-evenly;
             border: 3px solid darkred;
-            height: 150px;
+            height: 200px;
             margin: 10px;
             background-color: rgba(0, 0, 0, 0.515);
 
@@ -50,7 +51,7 @@
                 text-decoration: underline;
                 @media screen and (min-width:$largeur__bureau) {
                
-                   font-size: 1em;
+                   font-size: 0.8em;
         
                 }
             }
@@ -61,7 +62,7 @@
 
                 @media screen and (min-width:$largeur__bureau) {
                
-                    font-size: 0.6em;
+                    font-size: 0.5em;
          
                  }
                 
@@ -81,10 +82,18 @@
 }
 
 .menu-bloc_archive-container{ 
+    margin-left: 1.5em;
     .menu-item{
         background-image:url("noterbook.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .description{
+       padding-bottom: 8em;
+       font-size: 2em;
+
+        
     }
 
    
