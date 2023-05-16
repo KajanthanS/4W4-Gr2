@@ -38,6 +38,6 @@ if(is_front_page())(
    </header>
    <?php 
     if ( ! is_front_page()){
-    get_template_part("template-parts/aside"); 
+    get_template_part("template-parts/aside");
     }
     ?>

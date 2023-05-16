@@ -30,10 +30,11 @@
         }
        get_template_part('template-parts/categorie',$la_categorie); ?>
        
+       
        <?php endwhile;
         endif;
     ?>
     </section>
+    <?php get_template_part("template-parts/aside2"); ?>
 </main>
-
 <?php get_footer(); ?>
