@@ -473,7 +473,7 @@ hr {
   border-bottom: 8px ridge rgb(173, 48, 48);
   flex: 1 1 300px;
   height: 45vh;
-  background: black;
+  background: radial-gradient(red, black 50%);
   color: white;
   font-weight: bolder;
 }
