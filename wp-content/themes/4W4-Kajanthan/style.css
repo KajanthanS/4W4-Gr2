@@ -753,6 +753,7 @@ iframe {
 }
 .wp-block-image:hover {
   animation: animation-galerie 2s infinite ease-in-out;
+  filter: invert(100%);
 }
 
 @keyframes animation-galerie {
