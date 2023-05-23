@@ -838,6 +838,65 @@ iframe {
   font-size: 2em;
 }
 
+.menu-ateliermenu-container .menu {
+  display: flex;
+  margin-right: 3em;
+}
+.menu-ateliermenu-container .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 3px solid darkred;
+  height: 200px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.515);
+}
+@media screen and (min-width: 1000px) {
+  .menu-ateliermenu-container .menu .menu-item {
+    height: 300px;
+  }
+  .menu-ateliermenu-container .menu .menu-item .menu-thumbnail {
+    display: block;
+    border: 2px solid red;
+  }
+}
+.menu-ateliermenu-container .menu .menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.806);
+}
+.menu-ateliermenu-container .menu a {
+  font-size: 2rem;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+.menu-ateliermenu-container .menu a .title {
+  display: flex;
+  font-size: 0.5em;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1000px) {
+  .menu-ateliermenu-container .menu a .title {
+    font-size: 0.8em;
+  }
+}
+.menu-ateliermenu-container .menu a .description {
+  font-size: 0.4em;
+  text-decoration-line: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-ateliermenu-container .menu a .description {
+    font-size: 0.5em;
+  }
+}
+.menu-ateliermenu-container .menu a .menu-thumbnail {
+  display: none;
+  border: 2px solid red;
+}
+
 /* --------------------------------------------- layout */
 .site__header {
   grid-area: header;

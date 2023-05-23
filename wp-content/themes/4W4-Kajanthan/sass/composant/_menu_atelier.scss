@@ -1,0 +1,82 @@
+.menu-ateliermenu-container{
+    .menu{
+        display:flex;
+        margin-right: 3em;
+        
+        .menu-item{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            border: 3px solid darkred;
+            height: 200px;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.515);
+
+            
+            @media screen and (min-width:$largeur__bureau) {
+               
+                height: 300px;
+                
+                .menu-thumbnail{
+                    display:block;
+                    border:2px solid red ;
+                    
+                }
+    
+            }
+            
+        }
+
+
+        .menu-item:hover{
+            background-color: rgba(0, 0, 0, 0.806);
+            
+        }
+        
+        a{
+            font-size: 2rem;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            text-decoration: none;
+            align-items: center;
+
+            
+            
+            .title{
+                display: flex;
+                font-size: 0.5em;
+                text-decoration: underline;
+                @media screen and (min-width:$largeur__bureau) {
+               
+                   font-size: 0.8em;
+        
+                }
+            }
+
+            .description{
+                font-size: 0.4em;
+                text-decoration-line: none;
+
+                @media screen and (min-width:$largeur__bureau) {
+               
+                    font-size: 0.5em;
+         
+                 }
+                
+            }
+
+            .menu-thumbnail{
+                display:none;
+                border:2px solid red ;
+                
+                
+            }
+
+            
+        }
+    }
+
+}

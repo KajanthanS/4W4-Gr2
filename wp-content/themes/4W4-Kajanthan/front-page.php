@@ -8,6 +8,12 @@
 <main>
     <section class="blocflex1">
         <?php wp_nav_menu(array(
+            "menu" => "ateliermenu",
+            "container" => "nav"
+
+        )) ?>
+
+        <?php wp_nav_menu(array(
             "menu" => "evenementmenu",
             "container" => "nav"
 
