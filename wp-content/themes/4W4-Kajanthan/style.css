@@ -847,7 +847,7 @@ iframe {
   flex-direction: row;
   justify-content: space-evenly;
   border: 3px solid darkred;
-  height: 200px;
+  height: 250px;
   margin: 10px;
   background-color: rgba(0, 0, 0, 0.515);
 }
@@ -886,6 +886,7 @@ iframe {
 .menu-ateliermenu-container .menu a .description {
   font-size: 0.4em;
   text-decoration-line: none;
+  text-overflow: clip;
 }
 @media screen and (min-width: 1000px) {
   .menu-ateliermenu-container .menu a .description {
