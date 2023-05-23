@@ -8,7 +8,7 @@
             flex-direction: row;
             justify-content: space-evenly;
             border: 3px solid white;
-            height: 400px;
+            height: 500px;
             margin: 10px;
             background-color: rgba(50, 48, 48, 0.515);
 
@@ -30,6 +30,14 @@
 
         .menu-item:hover{
             background-color: rgba(0, 0, 0, 0.806);
+            .title{
+                animation: texte-apparait 2s ease-in-out;
+            }
+
+            .description{
+                animation: texte-apparait 2s ease-in-out;
+            }
+           
             
         }
         
@@ -53,6 +61,16 @@
                
                    font-size: 0.8em;
         
+                }
+
+                @keyframes texte-apparait {
+                    from{
+                        opacity: 0%;
+                    }
+
+                    to{
+                        opacity: 100%;
+                    }
                 }
             }
 

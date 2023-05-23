@@ -847,7 +847,7 @@ iframe {
   flex-direction: row;
   justify-content: space-evenly;
   border: 3px solid white;
-  height: 400px;
+  height: 500px;
   margin: 10px;
   background-color: rgba(50, 48, 48, 0.515);
 }
@@ -862,6 +862,12 @@ iframe {
 }
 .menu-ateliermenu-container .menu .menu-item:hover {
   background-color: rgba(0, 0, 0, 0.806);
+}
+.menu-ateliermenu-container .menu .menu-item:hover .title {
+  animation: texte-apparait 2s ease-in-out;
+}
+.menu-ateliermenu-container .menu .menu-item:hover .description {
+  animation: texte-apparait 2s ease-in-out;
 }
 .menu-ateliermenu-container .menu a {
   font-size: 2rem;
@@ -881,6 +887,14 @@ iframe {
 @media screen and (min-width: 1000px) {
   .menu-ateliermenu-container .menu a .title {
     font-size: 0.8em;
+  }
+}
+@keyframes texte-apparait {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 .menu-ateliermenu-container .menu a .description {
