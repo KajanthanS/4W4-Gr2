@@ -858,6 +858,7 @@ iframe {
   .menu-ateliermenu-container .menu .menu-item .menu-thumbnail {
     display: block;
     border: 2px solid red;
+    margin-bottom: 1em;
   }
 }
 .menu-ateliermenu-container .menu .menu-item:hover {
